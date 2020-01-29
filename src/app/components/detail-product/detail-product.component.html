@@ -1,0 +1,32 @@
+<mat-toolbar>
+  <h1>{{item.title}}</h1>
+  <button mat-button (click)="goBack()">
+    <mat-icon>navigate_before</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-list>
+  <mat-list-item>
+    <b>Type:</b>&nbsp;
+    {{item.type}}
+  </mat-list-item>
+  <mat-list-item>
+    <b>Description:</b>&nbsp;
+    {{item.description}}
+  </mat-list-item>
+  <mat-list-item>
+    <b>Filename:</b>&nbsp;
+    {{item.filename}}
+  </mat-list-item>
+  <mat-list-item>
+    <b>Size:</b>&nbsp;
+    {{item.height}} x {{item.width}}
+  </mat-list-item>
+  <mat-list-item>
+    <b>Price:</b>&nbsp;
+    {{item.price}}€
+  </mat-list-item>
+  <mat-list-item>
+    <b>Rating:</b>&nbsp;
+    {{item.rating}}
+  </mat-list-item>
+</mat-list>

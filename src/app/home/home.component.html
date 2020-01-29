@@ -1,0 +1,11 @@
+<mat-toolbar>
+  <h1>Supermarket</h1>
+  <button class="right-button" mat-button (click)="goToCart()">
+    <mat-icon>shopping_cart</mat-icon> ({{getItemsInCart()}})
+  </button>
+</mat-toolbar>
+
+<mat-list>
+  <app-list-product *ngFor="let item of list" [item]="item"></app-list-product>
+</mat-list>
+

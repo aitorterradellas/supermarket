@@ -1,0 +1,12 @@
+<mat-list-item>
+  <button color="secondary" mat-button (click)="goToDetail()">
+    {{ item.title }}
+    <mat-icon>navigate_next</mat-icon>
+  </button>
+  <button color="primary" mat-button (click)="addToCart()">
+    <mat-icon>add_shopping_cart</mat-icon>
+  </button>
+  <button color="warn" mat-button (click)="removeFromCart()">
+    <mat-icon>remove_shopping_cart</mat-icon>
+  </button>
+</mat-list-item>

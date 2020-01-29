@@ -1,0 +1,11 @@
+<mat-toolbar>
+  <h1>Cart</h1>
+  <button class="right-button" mat-button (click)="goBack()">
+    <mat-icon>navigate_before</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-list>
+  <mat-list-item *ngFor="let item of cart">
+    <b>{{item.product.title}}:</b>&nbsp;  {{item.count}}
+  </mat-list-item>
+</mat-list>
